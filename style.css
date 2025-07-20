@@ -69,7 +69,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 18px;
-    color: #00b1d2;
+    color: white;
     position: relative;
 }
 
@@ -103,6 +103,29 @@ nav ul li a:hover::after {
 }
 .p{
     color: #ff6900;
+}
+
+.back-to-top {
+position: fixed;
+bottom: 30px;
+right: 30px;
+background-color: #333;
+color: white;
+padding: 12px 14px;
+border-radius: 50%;
+text-decoration: none;
+font-size: 20px;
+display: none;
+z-index: 1000;
+transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+background-color: #555;
+}
+
+html {
+scroll-behavior: smooth;
 }
 
 
@@ -194,7 +217,7 @@ nav ul li a:hover::after {
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 50px;
     margin-top: 50px;
 }
 
@@ -209,13 +232,13 @@ nav ul li a:hover::after {
 
 .services-list div i {
     font-size: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .services-list div h2 {
     font-size: 30px;
     font-weight: 500;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .services-list div a {
@@ -415,7 +438,8 @@ nav .fas {
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 40px;
+        
     }
 
     nav .fas {

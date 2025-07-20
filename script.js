@@ -39,3 +39,13 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
+
+
+window.onscroll = function () {
+    const btn = document.querySelector(".back-to-top");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+    } else {
+    btn.style.display = "none";
+    }
+};
