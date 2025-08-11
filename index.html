@@ -1,195 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio - Akinyemi Marvellous</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./images/ChatGPT_Image_Jul_10__2025__04_16_57_PM-removebg-preview - Copy.png">
-    <script src="https://kit.fontawesome.com/c726940800.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/ChatGPT_Image_Jul_10__2025__04_16_57_PM-removebg-preview - Copy.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/c726940800.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="./images/ChatGPT_Image_Jul_10__2025__04_16_57_PM-removebg-preview - Copy.png" alt="" class="logo">
-                <ul id="sideMenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Junior Data Analyst</p>
-                <h1>Hi, I'm <span>Akinyemi<br> Marvellous</span> From <br>Nigeria</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img
+            src="./images/ChatGPT_Image_Jul_10__2025__04_16_57_PM-removebg-preview - Copy.png"
+            alt=""
+            class="logo"
+          />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li class="dropdown">
+              <a href="#">Skills</a>
+              <ul class="dropdown-content">
+                <li><a href="sql.html">SQL</a></li>
+                <li><a href="powerbi.html">Power BI</a></li>
+                <li><a href="excel.html">Excel</a></li>
+                <li><a href="python.html">Python</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Junior Data Analyst</p>
+          <h1>
+            Hi, I'm
+            <span
+              >Akinyemi<br />
+              Marvellous</span
+            >
+            From <br />Nigeria
+          </h1>
         </div>
-        <i id="dont-show">
-            <!-- <a href="#header" style="position: fixed; border: 1px solid #ffffff; border-radius: 10px; padding: 10px; color: #ff6900; text-decoration: none; margin-left: 1200px; margin-top: 70px; float: left;">Go To Home</a> -->
-        
-        </i>
+      </div>
+      <i id="dont-show">
+        <!-- <a href="#header" style="position: fixed; border: 1px solid #ffffff; border-radius: 10px; padding: 10px; color: #ff6900; text-decoration: none; margin-left: 1200px; margin-top: 70px; float: left;">Go To Home</a> -->
+      </i>
     </div>
 
-    <a href="#" class="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i>
-</a>
+    <a href="#" class="back-to-top" title="Go to top"
+      ><i class="fas fa-arrow-up"></i>
+    </a>
 
-
-
-
-        <!------------------- About ------------------------->
+    <!------------------- About ------------------------->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./images/zeal.jpeg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>I am a data analyst with a strong background in extracting actionable insights from complex datasets to drive strategic decision-making.
-
-Proficient in tools such as Excel, Power BI, SQL, and Python, I specialize in data cleaning, visualization, and trend analysis.
-
-With a keen eye for detail and a passion for turning data into impactful narratives, I help organizations optimize performance and achieve data-driven goals.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Excel</span><br>Data Cleaning and Dashboarding and Reporting</li>
-                            <li><span>Power Bi</span><br>Dashboarding and reporting in business environments</li>
-                            <li><span>SQL</span><br>Database querying</li>
-                            <li><span>Python</span><br>Leveraging Pandas, NumPy and IPython for efficient data cleaning, manipulation and exploration</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2025 - Current</span><br>Data Analyst at SQICICT</li>
-                            <!-- <li><span>2023 - Current</span><br>Graphics Design at SQICICT</li>
-                            <li><span>2024 - Current</span><br>Video Editing at SQICICT</li> -->
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                             <li><span>2025</span><br>SQI College OF ICT</li>
-                            <li><span>2023</span><br>Computer Science, Faculty Computing and Informatics LAUTECH</li>
-                           
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/zeal.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I am a data analyst with a strong background in extracting
+              actionable insights from complex datasets to drive strategic
+              decision-making. Proficient in tools such as Excel, Power BI, SQL,
+              and Python, I specialize in data cleaning, visualization, and
+              trend analysis. With a keen eye for detail and a passion for
+              turning data into impactful narratives, I help organizations
+              optimize performance and achieve data-driven goals.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Excel</span><br />Data Cleaning and Dashboarding and
+                  Reporting
+                </li>
+                <li>
+                  <span>Power Bi</span><br />Dashboarding and reporting in
+                  business environments
+                </li>
+                <li><span>SQL</span><br />Database querying</li>
+                <li>
+                  <span>Python</span><br />Leveraging Pandas, NumPy and IPython
+                  for efficient data cleaning, manipulation and exploration
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2025 - Current</span><br />Data Analyst at SQICICT
+                </li>
+                <!-- <li><span>2023 - Current</span><br>Graphics Design at SQICICT</li>
+                            <li><span>2024 - Current</span><br>Video Editing at SQICICT</li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2025</span><br />SQI College OF ICT</li>
+                <li>
+                  <span>2023</span><br />Computer Science, Faculty Computing and
+                  Informatics LAUTECH
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!------------- Services  ------------------>
 
     <div id="service">
-        <div class="container">
-            <h1 class="subtitle">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-filter"></i>
-                    <h2>Data Cleaning & Preparation</h2>
-                    <p>I help turn messy, incomplete datasets into clean-structured, and analysis-ready data using tools like Pandas, NumPy and Excel. This includes: Removing duplicates and missing values, data formatting and 
-merging and transforming datasets</p>
-                    
-                </div>
-                <div>
-                    <i class="fa-solid fa-chart-line"></i>
-                    <h2>Dashboard & Report Creation</h2>
-                    <p>I build interactive dashboards and clean reports using Power BI, Excel and Python visualization libraries such as Matplotlib and Seaborn to help you visualize key business metrics. This include: Sales, finance, customer, and HR dashboards, performance tracking tools and dynamic visual storytelling</p>
-                    
-                </div>
-                <div>
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <h2>Data Analysis & Insights</h2>
-                    <p>Using Python, Excel and SQL, I extract meaningful patterns from raw data to support decision-making. This include: Descriptive and exploratory analysis, trend identification and KPI tracking and summary reports and data interpretation</p>
-                    
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-filter"></i>
+            <h2>Data Cleaning & Preparation</h2>
+            <p>
+              I help turn messy, incomplete datasets into clean-structured, and
+              analysis-ready data using tools like Pandas, NumPy and Excel. This
+              includes: Removing duplicates and missing values, data formatting
+              and merging and transforming datasets
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Dashboard & Report Creation</h2>
+            <p>
+              I build interactive dashboards and clean reports using Power BI,
+              Excel and Python visualization libraries such as Matplotlib and
+              Seaborn to help you visualize key business metrics. This include:
+              Sales, finance, customer, and HR dashboards, performance tracking
+              tools and dynamic visual storytelling
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            <h2>Data Analysis & Insights</h2>
+            <p>
+              Using Python, Excel and SQL, I extract meaningful patterns from
+              raw data to support decision-making. This include: Descriptive and
+              exploratory analysis, trend identification and KPI tracking and
+              summary reports and data interpretation
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <!------------------ Portfolio ------------------------------->
-    
+
     <div id="portfolio">
-    <div class="container">
+      <div class="container">
         <h1 class="subtitle">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="./images/Car analysis.JPG" alt="">
-                <div class="layer">
-                    <h3>Automotive Sales Performance Dashboard</h3>
-                    <p>The dashboard provides a comprehensive overview of key sales metrics, customer engagement, order volumes and budget utilization. It also delves into different sales segments, sales types, and monthly sales trends, all centered around a visual representation of a vehicle</p>
-                    <a href="https://app.powerbi.com/reportEmbed?reportId=5e0abb3a-4e3c-4be0-86d3-1a084864ad69&autoAuth=true&ctid=a7b15ebf-f361-4934-86c8-43f76c182d96" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+          <div class="work">
+            <img src="./images/Car analysis.JPG" alt="" />
+            <div class="layer">
+              <h3>Automotive Sales Performance Dashboard</h3>
+              <p>
+                The dashboard provides a comprehensive overview of key sales
+                metrics, customer engagement, order volumes and budget
+                utilization. It also delves into different sales segments, sales
+                types, and monthly sales trends, all centered around a visual
+                representation of a vehicle
+              </p>
+              <a
+                href="https://app.powerbi.com/reportEmbed?reportId=5e0abb3a-4e3c-4be0-86d3-1a084864ad69&autoAuth=true&ctid=a7b15ebf-f361-4934-86c8-43f76c182d96"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="./images/HR Analysis.JPG" alt="">
-                <div class="layer">
-                    <h3>HR Analytics Dashboard</h3>
-                    <p>This HR Analytics Dashboard project was designed to uncover key workforce insights from employee data. It aimed to track attrition patterns, evaluate workforce demographics, and identify areas for strategic HR interventions using visual and statistical analysis in Excel/Power BI</p>
-                    <a href="https://app.powerbi.com/reportEmbed?reportId=c4859508-813f-484a-bb39-2bbfa99771ea&autoAuth=true&ctid=a7b15ebf-f361-4934-86c8-43f76c182d96" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="./images/HR Analysis.JPG" alt="" />
+            <div class="layer">
+              <h3>HR Analytics Dashboard</h3>
+              <p>
+                This HR Analytics Dashboard project was designed to uncover key
+                workforce insights from employee data. It aimed to track
+                attrition patterns, evaluate workforce demographics, and
+                identify areas for strategic HR interventions using visual and
+                statistical analysis in Excel/Power BI
+              </p>
+              <a
+                href="https://app.powerbi.com/reportEmbed?reportId=c4859508-813f-484a-bb39-2bbfa99771ea&autoAuth=true&ctid=a7b15ebf-f361-4934-86c8-43f76c182d96"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="./images/Salary Analysis.JPG" alt="">
-                <div class="layer">
-                    <h3>Salary Analysis Dashboard</h3>
-                    <p>This Salary Analysis Dashboard was created to analyze compensation trends across education levels, experience, gender, and job roles. The objective was to uncover disparities and patterns that inform compensation strategy and workforce planning using visual storytelling in Power BI</p>
-                    <a href="https://app.powerbi.com/reportEmbed?reportId=29ecfe6e-ce42-4682-be93-456571a30ba5&autoAuth=true&ctid=a7b15ebf-f361-4934-86c8-43f76c182d96" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="./images/Salary Analysis.JPG" alt="" />
+            <div class="layer">
+              <h3>Salary Analysis Dashboard</h3>
+              <p>
+                This Salary Analysis Dashboard was created to analyze
+                compensation trends across education levels, experience, gender,
+                and job roles. The objective was to uncover disparities and
+                patterns that inform compensation strategy and workforce
+                planning using visual storytelling in Power BI
+              </p>
+              <a
+                href="https://app.powerbi.com/reportEmbed?reportId=29ecfe6e-ce42-4682-be93-456571a30ba5&autoAuth=true&ctid=a7b15ebf-f361-4934-86c8-43f76c182d96"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
+          </div>
         </div>
         <a href="#" class="btn">See more</a>
+      </div>
     </div>
-</div>
 
     <!--------------------------- Contact --------------------------->
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>akinyemioluwasegun2@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>+234 907 217 2438</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/akinyemi.damilare.16"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.tiktok.com/@official_timi_vic?_t=ZM-8wPKfbiK31j&_r=1"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.instagram.com/timi.vic/"><i
-                                class="fab fa-instagram"></i></a> 
-
-                    </div>
-                    <!-- <a href="images/Piercing the darkness ( PDFDrive ).pdf" download class="btn btn2">Download CV</a> -->
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" id="" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i>akinyemioluwasegun2@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i>+234 907 217 2438</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/akinyemi.damilare.16"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@official_timi_vic?_t=ZM-8wPKfbiK31j&_r=1"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="https://www.instagram.com/timi.vic/"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
+            <!-- <a href="images/Piercing the darkness ( PDFDrive ).pdf" download class="btn btn2">Download CV</a> -->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright ©  Akinyemi Marvellous</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Akinyemi Marvellous</p>
+      </div>
     </div>
-    
-    <script src="script.js"></script>
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>
