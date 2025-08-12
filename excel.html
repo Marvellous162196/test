@@ -5,10 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Excel Projects</title>
     <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/ChatGPT_Image_Jul_10__2025__04_16_57_PM-removebg-preview - Copy.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/c726940800.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <section class="projects-section">
-      <h1 class="projects-title">Python Projects</h1>
+      <nav>
+        <img
+          src="./images/ChatGPT_Image_Jul_10__2025__04_16_57_PM-removebg-preview - Copy.png"
+          alt=""
+          class="logo"
+        />
+        <ul id="sideMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#service">Services</a></li>
+          <li><a href="./index.html#portfolio">Portfolio</a></li>
+          <li class="dropdown">
+            <a href="./index.html">Skills</a>
+            <ul class="dropdown-content">
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="powerbi.html">Power BI</a></li>
+              <li><a href="excel.html">Excel</a></li>
+              <li><a href="python.html">Python</a></li>
+            </ul>
+          </li>
+
+          <li><a href="./index.html#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <h1 class="projects-title">Excel Projects</h1>
       <div class="projects-grid">
         <div class="project-card">
           <img src="./images/Bank.JPG" alt="Project Image" />
@@ -113,5 +153,6 @@
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
