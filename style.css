@@ -436,6 +436,10 @@ nav .fas {
     font-size: 40px;
   }
 
+  .dark-top {
+    color: black;
+  }
+
   nav .fas {
     display: block;
     font-size: 25px;
